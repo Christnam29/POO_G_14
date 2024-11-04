@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iomanip>
 
 class Image {
 
@@ -35,9 +36,8 @@ public:
         nbreCategories++;
     }
 
-    // Méthode pour calculer le taux de popularité (à définir selon tes besoins)
+    // Méthode pour calculer le taux de popularité
     double calculerTauxDePopularite() {
-        // Exemple de calcul du taux de popularité
         return nbreTelechargements > 0 ? static_cast<double>(nbreTotalImages) / nbreTelechargements : 0;
     }
 
@@ -45,10 +45,10 @@ public:
     void afficherStatistiques() {
         std::cout << "Nombre total d'images : " << nbreTotalImages << std::endl;
         std::cout << "Nombre total d'utilisateurs : " << nbreTotalUtilisateurs << std::endl;
-        std::cout << "Nombre de telechargements : " << nbreTelechargements << std::endl;
-        std::cout << "Nombre de categories : " << nbreCategories << std::endl;
-        std::cout << "Taux de popularite : " << calculerTauxDePopularite() << std::endl;
-        // Affiche les images populaires si nécessaire
+        std::cout << "Nombre de téléchargements : " << nbreTelechargements << std::endl;
+        std::cout << "Nombre de catégories : " << nbreCategories << std::endl;
+        std::cout << "Taux de popularité : " << std::fixed << std::setprecision(2)
+                  << calculerTauxDePopularite() << std::endl;
     }
 };
 
