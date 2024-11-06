@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1730822712 source:c:\users\elitebook 840 g5\desktop\poo\poo_g_14\projet\main.cpp
+
+1730825275 source:c:\users\elitebook 840 g5\desktop\poo\poo_g_14\projet\image.cpp
+	"Image.h"
+	<iostream>
+
+1730824902 c:\users\elitebook 840 g5\desktop\poo\poo_g_14\projet\image.h
+	<string>
+	<vector>
+
