@@ -17,7 +17,7 @@ class Image
         void afficher() const;
 
 
-        string GetnomFichier() { return nomImage; }
+        string GetnomFichier() const { return nomImage; }
         void SetnomFichier(string val) { nomImage = val; }
 
     protected:

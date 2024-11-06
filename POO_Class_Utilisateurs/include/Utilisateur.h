@@ -16,6 +16,7 @@ class Utilisateur
         string mail;
         string motdepasse;
         vector <Image> galerie;
+        vector <Image> favoris;
 
 
     public:
@@ -46,6 +47,11 @@ class Utilisateur
 
         void telechargerImage(const std::string& nomFichier);
         void afficherGalerie() const;
+        void supprimerImageDeGalerie (const string& nomFichier);
+        void liker(const string& nomFichier);
+        void supprimerImageDeFavoris(const string& nomFichier);
+        void afficherFavoris() const;
+        void quitterApp();
 
 
 

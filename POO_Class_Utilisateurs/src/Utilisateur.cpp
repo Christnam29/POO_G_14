@@ -111,14 +111,61 @@ bool Utilisateur::seConnecter(const string& name, const string& mdp) const {
 void Utilisateur::telechargerImage(const string& nomFichier){
     Image nouvelleImage(nomFichier);
     galerie.push_back(nouvelleImage);
-    cout << "Image " << nomFichier << " ajoutée à la galerie." << endl;
+    cout << "Téléchargement de l'image...\n";
+    cout << "Image " << nomFichier << " ajoutee à la galerie.\n" << endl;
 }
 
 void Utilisateur::afficherGalerie() const {
+cout << "Affichage de la galerie d'images...\n";
  cout << "Galerie de " << get_nomUser() << " :" << endl;
     for (const auto& image : galerie) {
         image.afficher();
     }
+}
+
+void Utilisateur::supprimerImageDeGalerie(const string& nomFichier) {
+    auto it = galerie.begin();
+    while (it != galerie.end()) {
+        if (it->GetnomFichier() == nomFichier) {
+            it = galerie.erase(it);
+            cout << "Suppression de l'image...\n";
+            cout << "L'image " << nomFichier << " a bien ete supprimee de la galerie. \n" << endl;
+        } else {
+            ++it;
+        }
+    }
+}
+
+
+void Utilisateur::liker(const string& nomFichier) {
+    Image image_likee = nomFichier;
+    favoris.push_back(image_likee);
+    cout << "Image " << nomFichier << " ajoutee aux favoris.\n" << endl;
+    }
+
+
+void Utilisateur::afficherFavoris() const {
+ cout << "\nLes photos likees par " << get_nomUser() << " :" << endl;
+    for (const auto& image : favoris) {
+        image.afficher();
+    }
+}
+
+void Utilisateur::supprimerImageDeFavoris(const string& nomFichier) {
+    auto it = favoris.begin();
+    while (it != favoris.end()) {
+        if (it->GetnomFichier() == nomFichier) {
+            it = favoris.erase(it);
+            cout << "Suppression de l'image...\n";
+            cout << "L'image " << nomFichier << " a bien ete supprimee de la liste de favoris.\n" << endl;
+        } else {
+            ++it;
+        }
+    }
+}
+
+void Utilisateur::quitterApp() {
+    cout << "Merci d'avoir utilise l'application d'images. A bientot !\n";
 }
 
 Utilisateur::~Utilisateur()
