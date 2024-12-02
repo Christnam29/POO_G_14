@@ -1,0 +1,16 @@
+[
+    {
+        "categorie": "nature",
+        "descriptionImage": "Un coucher de soleil magnifique",
+        "estApprouvee": true,
+        "estPublique": true,
+        "format": "",
+        "id": 1,
+        "motsCles": [
+            "soleil",
+            "nature",
+            "coucher"
+        ],
+        "nomImage": "coucher_soleil"
+    }
+]

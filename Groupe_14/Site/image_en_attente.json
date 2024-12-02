@@ -1,0 +1,24 @@
+[
+    {
+        "categorie": "famille",
+        "descriptionImage": "C est mon papa, le plus beau",
+        "estApprouvee": false,
+        "estPublique": true,
+        "format": "",
+        "id": 2,
+        "motsCles": [],
+        "nomImage": "papa",
+        "nomUtilisateur": "Jean"
+    },
+    {
+        "categorie": "Technologie",
+        "descriptionImage": "Un bon macbook",
+        "estApprouvee": false,
+        "estPublique": true,
+        "format": "",
+        "id": 3,
+        "motsCles": [],
+        "nomImage": "Ordinateur",
+        "nomUtilisateur": "Jean"
+    }
+]

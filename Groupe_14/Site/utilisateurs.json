@@ -1,0 +1,48 @@
+[
+    {
+        "favoris": [
+            {
+                "categorie": "nature",
+                "descriptionImage": "Un coucher de soleil magnifique",
+                "estApprouvee": false,
+                "estPublique": true,
+                "format": "",
+                "id": 1,
+                "motsCles": [
+                    "soleil",
+                    "nature",
+                    "coucher"
+                ],
+                "nomImage": "coucher_soleil"
+            }
+        ],
+        "galerie": [
+            "le_ciel.png"
+        ],
+        "id": 1,
+        "mail": "jean@yahoo.fr",
+        "motdepasse": "1234",
+        "nomUser": "Jean"
+    },
+    {
+        "favoris": [
+            "0"
+        ],
+        "galerie": [
+            "image1.jpg",
+            "le_ciel.png"
+        ],
+        "id": 2,
+        "mail": "jean.dupont@example.com",
+        "motdepasse": "1234",
+        "nomUser": "Dupont"
+    },
+    {
+        "favoris": [],
+        "galerie": [],
+        "id": 5,
+        "mail": "divinsehlin@gmail.com",
+        "motdepasse": "1234",
+        "nomUser": "Divin"
+    }
+]
